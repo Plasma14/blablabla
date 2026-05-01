@@ -10,7 +10,7 @@ local RunService: RunService = cloneref(game:GetService("RunService"))
 local TweenService: TweenService = cloneref(game:GetService("TweenService"))
 
 local LocalPlayer = Players.LocalPlayer or Players.PlayerAdded:Wait()
-local Mouse = cloneref(InputService:GetMouseLocation())
+local Mouse = UserInputService:GetMouseLocation()
 
 local DrawingLib = { drawing_replaced = true, new = function(...) error("Drawing is not supported.") end }
 local IsBadDrawingLib = false
